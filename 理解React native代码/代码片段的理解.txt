@@ -1,0 +1,154 @@
+
+一、
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#FFFF00',
+  },
+  welcome: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
+  },
+  instructions: {
+    textAlign: 'center',
+    color: '#333333',
+    marginBottom: 5,
+  },
+});
+
+var mainText = "点击屏幕任意位置"
+class JSReactBasics extends Component {
+  render() {
+    return (
+      <TouchableHighlight
+        onPress={() => this.backgorundClicked()}
+        underlayColor = '#FF0000'
+        style = {styles.container}
+        >
+        <Text style={styles.welcome}>{mainText}</Text>
+      </TouchableHighlight>
+    );
+  }
+  backgorundClicked(){
+
+    console.log("类中的方法");
+  }
+}
+
+//
+1.container 里面的backgroundColor: '#FFFF00',这是整个页面的背景色。 TouchableHighlight里面的 underlayColor = '#FF0000'这是当我们点击这个组件的时候整个页面的背景色
+
+2.onPress={() => this.backgorundClicked()}等价于onPress={this.backgorundClicked} 绑定了点击时候触发的函数
+
+二、
+class SimpleNavigationApp extends Component {
+  render() {
+    return (
+      <Navigator
+        initialRoute={{ title: 'My Initial Scene', i: 0 }}
+        renderScene={(route, navigator) =>
+          <MyScene
+            title={route.title}
+
+            // Function to call when a new scene should be displayed
+            onForward={ () => {
+              const nextIndex = route.i + 1;
+              navigator.push({
+                title: 'Scene ' + nextIndex,
+                i: nextIndex,
+              });
+            }}
+
+            // Function to call to go back to the previous scene
+            onBack={() => {
+              if (route.i > 0) {
+                navigator.pop();
+              }
+            }}
+          />
+        }
+      />
+    )
+  }
+}
+
+initialRoute={{ title: 'My Initial Scene', i: 0 }} 这里自己把index改成了i依然可以运行。
+initialRoute：类型是对象，表明最初的Route对象。一个Route简单来说就是一个界面，Navigator用Route来区分不同的界面。
+后面是可以通过路由来调用。
+
+push(route) ，跳转到某一个Route
+navigator.push({title: 'Scene ' + nextIndex,i: nextIndex,});那么括号里面的就是一个路由对象：{title: 'Scene ' + nextIndex,i: nextIndex,}
+这个路由对象里面的参数是和刚刚初始化的那个路由参数是一样的。
+initialRoute={{ title: 'My Initial Scene', i: 0 }}
+
+！！！
+没有一个路由相当于重新创建了一个场景，在创建路由的时候会带有一些参数，那么这个就相当于带上这些参数把这个js页面的代码重新执行了一遍
+
+（！！！自己可以定义一个全局变量去测试一下！！！）
+
+三、
+import React, { Component } from 'react';
+import  {
+  AppRegistry,
+  StyleSheet,
+  Text,
+  Image,
+  View,
+  TextInput,
+} from'react-native';
+
+
+import React, {
+  AppRegistry,
+  Component,
+  StyleSheet,  
+  Text,
+  Image,
+  View,
+  TextInput,
+} from'react-native';  这种写法一直报错只能遵从上面的写法。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+React中国社区：http://react-china.org/
+ 
+React 官网：http://reactjs.cn/react/index.html
+ 
+React入门实例：http://www.ruanyifeng.com/blog/2015/03/react.html
+ 
+React 基础教程：http://www.runoob.com/react/react-tutorial.html 
+
+ES6: http://es6.ruanyifeng.com/#docs/let 

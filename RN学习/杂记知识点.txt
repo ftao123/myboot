@@ -1,0 +1,6 @@
+
+1.自己在网上下载一个工程跑步起来是因为没有那个react库，然后npm install 下载了一个node_modules就可以了。
+
+2.React组件属性部类（propTypes）校验  http://www.myexception.cn/web/2016594.html
+
+3.JavaScript Fetch API  http://www.tuicool.com/articles/QZBJ7zJ

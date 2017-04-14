@@ -1,0 +1,6 @@
+
+1.
+justify-content 用于设置或检索弹性盒子元素在主轴（横轴）方向上的对齐方式。
+提示：使用 align-content 属性对齐交叉轴上的各项（垂直）。
+
+2.注意，设为Flex布局以后，子元素的float、clear和vertical-align属性将失效。 http://blog.csdn.net/linda_417/article/details/51507176

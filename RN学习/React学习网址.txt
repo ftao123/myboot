@@ -1,0 +1,49 @@
+
+React Router 使用教程 http://www.ruanyifeng.com/blog/2016/05/react_router.html (大师的博客)
+
+
+
+1.基础篇章：关于 React Native 的props，state，style的讲解  http://qoofan.com/read/e82Pw0OwlM.html (讲的挺好的，让自己里面就理解了)
+
+2.http://blog.csdn.net/gz_jero/article/details/51510839
+  这个作者写了很多关然react native 的，自己要多从csdn入手学习！！!
+
+3.http://blog.csdn.net/itfootball/article/details/47192419 写了大量的笔记
+
+4. React-Native android在windows下的踩坑记 http://www.cnblogs.com/meteoric_cry/p/4874517.html
+
+
+
+
+
+
+54-22= 32
+
+style="width:5;heigth:363;">
+                    <div class="portlet-title"  style="width:554.33;heigth:363;>
+					
+					
+					<div class="portlet-title" >
+                                       
+
+                    </div>
+                                    <div class="portlet-body" id="blockui_sample_1_portlet_body">
+                                        <div class="tiles tile-pic">
+                                            <div class="tile image">
+                                                <div class="tile-body">
+                                                    <img onclick="CMS.Slider.editSlider(this)" data-id="22" alt="" src="http://img01.pic.12306pc.cn//display/public/100063/10/0/10/0/640x350/8df31c68b7abc2b1ec2475d7ea439874.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="margin-bottom-10">
+                                                排序: 1                                            
+                                            </div>
+ 
+
+                                        <div class="clearfix">
+                                            <i class="sui-icon icon-touch-edit-rect" style="width:42;heigth:40;"></i>
+                                            <i class="sui-icon icon-touch-garbage"></i>
+                                              
+                                            <a class="btn red" role="button" onclick="CMS.Slider.deleteSlider(this)" data-id="22"><i class="glyphicon glyphicon-trash"></i></a>
+                                        </div>
+                                        </div>  
+                                    </div>

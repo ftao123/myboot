@@ -1,0 +1,14 @@
+1.
+使用react-native中的Navigator组件进行页面导航  http://www.cnblogs.com/flyingzl/articles/4913693.html （也不错）
+
+React Native的Navigator详解   http://blog.csdn.net/Hello_Hwc/article/details/51444540 （这里讲的挺详细的）
+
+React Native－7.React Native NavigatorIOS组件详解 http://blog.csdn.net/wxs0124/article/details/506088459（这个是关于NavigatorIOS导航的）
+
+ReactNative的Navigator组件使用方式 http://www.open-open.com/lib/view/1461047062382
+（里面使用了return <SecondPage navigator={navigator} {...route.passProps}/> ...route.passProps这个不太理解）
+渲染场景(renderScene): 使用动态加载组件的方式. 设置加载页面的navigator参数, 其余使用route.passProps属性传递其他参数.
+
+2.React Native学习小结  http://www.cnblogs.com/puff/p/5196255.html
+
+3.React Native控件之TextInput组件讲解与QQ登录界面实现(11) http://blog.csdn.net/developer_jiangqq/article/details/50589570

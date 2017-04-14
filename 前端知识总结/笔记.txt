@@ -1,0 +1,11 @@
+
+1.如果div里面没有放置东西是显示不出来的。
+
+2.http://blog.sina.com.cn/s/blog_8bd0deda0100xi27.html ！important语法
+
+3.clear:both;在css中，首先我们理解一下clear，顾名思义就是清除的意思，both的意思是全部，那连起来就是清除全部样式，
+  不过这个样式主要是用于对多个div浮动的清除，如float:left,如果不清除，很容易对下面的div造成显示错位.
+
+
+      
+

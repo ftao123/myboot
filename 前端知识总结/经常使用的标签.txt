@@ -1,0 +1,64 @@
+1.
+span label   border   background   display   font   vertical-align overflow  text-align
+
+需要兼容浏览器属性：box-sizing   border-radius transition appearance
+
+
+
+1.
+background : transparent none repeat scroll 0% 0%
+分别代表
+背景属性：背景颜色 背景图片 背景是否重复 背景时候随浏览器滚动 背景平位置 背景垂直位置
+background : background-color || background-image || background-repeat || background-attachment || background-position
+
+2.
+相当于：
+font-weight:bold;
+font-size:1.1em;
+加粗，以及当前字体的1.1倍。 
+
+em等于一个字体大小。
+比方当前定义了BODY是10px;
+某个元素又定义了1.1em; 那么此时字体等于11px;
+
+    关键点： 　　
+	1. IE无法调整那些使用px作为单位的字体大小;
+　　2. 国外的大部分网站能够调整的原因在于其使用了em作为字体单位;
+　　3. Firefox能够调整px和em，但是96%以上的中国网民使用IE浏览器(或内核)。
+　　px像素(Pixel)。相对长度单位。像素px是相对于显示器屏幕分辨率而言的。
+　　em是相对长度单位。相对于当前对象内文本的字体尺寸。如当前对行内文本的字体尺寸未被人为设置，则相对于浏览器的默认字体尺寸。
+　　任意浏览器的默认字体高都是16px。所有未经调整的浏览器都符合: 1em=16px。那么12px=0.75em,10px=0.625em。为了简化font-size的换算，需要在css中的body选择器中声明 Font-size=62.5%，这就使em值变为 16px*62.5%=10px, 这样12px=1.2em, 10px=1em, 也就是说只需要将你的原来的px数值除以10，然后换上em作为单位就行了。
+　　em有如下特点：
+　　1. em的值并不是固定的;
+　　2. em会继承父级元素的字体大小。
+　　所以我们在写CSS的时候，需要注意两点：
+　　1. body选择器中声明Font-size=62.5%;
+　　2. 将你的原来的px数值除以10，然后换上em作为单位;
+　　3. 重新计算那些被放大的字体的em数值。避免字体大小的重复声明。
+　　也就是避免1.2 * 1.2= 1.44的现象。比如说你在#content中声明了字体大小为1.2em，那么在声明p的字体大小时就只能是1em，而不是1.2em, 因为此em非彼em，它因继承#content的字体高而变为了1em=12px。
+　　但是12px汉字例外，就是由以上方法得到的12px(1.2em)大小的汉字在IE中并不等于直接用12px定义的字体大小，而是稍大一点。这个问 题 Jorux已经解决，只需在body选择器中把62.5%换成63%就能正常显示了。原因可能是IE处理汉字时，对于浮点的取值精确度有限。不知道有没有 其他的解释
+
+彻底弄懂css中单位px和em,rem的区别  http://www.cnblogs.com/leejersey/p/3662612.html
+
+3.
+body{
+background: #424f63;
+color: #FFFF00;
+}
+background 背景色  color里面元素的颜色
+
+
+
+
+___________________________________________________________________________________________________
+
+font:
+font-family	规定字体系列  font-weight	规定字体粗细
+
+
+
+
+
+
+
+

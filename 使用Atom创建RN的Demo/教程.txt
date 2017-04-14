@@ -1,0 +1,11 @@
+
+
+
+1.React Native开发之IDE（Atom+Nuclide）安装，运行，调试 http://blog.csdn.net/hello_hwc/article/details/51612139
+  根据这个网址安装好工具之后运行：
+
+  react-native init Demo --verbose 这个意思是创建包名为：Demo的RN工程，自己打开命令行直接运行默认是创建在C:\Users\Administrator下面的，
+所以自己要先进去E：，然后cd RN 进入E盘RN目录（进入自己放RN工程的目录），然后运行 react-native init Demo --verbose，那么就会在E:\RN下面
+创建名为Demo的RN工程。
+
+此刻RNDemo已经创建完成。

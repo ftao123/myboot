@@ -1,0 +1,47 @@
+
+1. windows下react-native android打包笔记  http://www.cnblogs.com/fancyallen/p/5715632.html
+
+首先在gradle下载添加代码：
+
+    signingConfigs {
+        debug {
+            keyAlias '51jk'
+            keyPassword '123456'
+            storeFile file('D:\\work\\pharmacist\\app\\debug.jks')
+            storePassword '123456'
+        }
+        prerelease {
+            keyAlias System.getenv("KEY_ALIAS")
+            keyPassword System.getenv("KEY_PASSWORD")
+            storeFile file(System.getenv("KEYSTORE") + "")
+            storePassword System.getenv("KEYSTORE_PASSWORD")
+        }
+        release {
+            keyAlias '51jk'
+            keyPassword 'bc550bfb171c28c679db6a522fc2a3ba'
+            storeFile file('D:/work/51jk.jks')
+            storePassword '5ad4531b05812dfe12f73587f29cd9fe'
+        }
+    }
+	
+	 buildTypes {
+        release {
+            minifyEnabled enableProguardInReleaseBuilds
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+          
+        }
+    }
+这个是自动生成的代码：
+
+  buildTypes {
+        release {
+            minifyEnabled enableProguardInReleaseBuilds
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            signingConfig signingConfigs.release
+        }
+    }
+signingConfig signingConfigs.release  //添加这句话引用签名配置 没有这个句话导致没有签名成功无法安装。
+
+
+
+
