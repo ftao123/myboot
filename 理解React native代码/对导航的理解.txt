@@ -1,0 +1,16 @@
+
+
+
+
+
+
+
+ReactNative页面跳转Navigator    http://blog.csdn.net/huaheshangxo/article/details/50926946
+
+
+renderScene={(route, navigator) => {
+      let Component = route.component;
+      return <Component {...route.params} navigator={navigator} />
+    }}
+
+return <Component {...route.params} navigator={navigator}自己理解这个应该是每一页都会执行这个。

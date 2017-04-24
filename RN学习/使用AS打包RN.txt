@@ -1,0 +1,9 @@
+
+
+
+
+自己打包时候遇到的问题：怎么解决libpng error not a png file错误 http://jingyan.baidu.com/article/ed15cb1b7445001be369811f.html  （可以使用图片转换工具进行转换）
+
+
+
+1.React-Native工程项目打包编译发布过程详解  http://blog.csdn.net/jiangbo_phd/article/details/53996112

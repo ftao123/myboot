@@ -1,5 +1,9 @@
 
 
+ReactNative从学习到放弃——准备工作  http://blog.csdn.net/zjm0518/article/details/52131872
+
+
+
 
 1. 加载数据的时候显示的loading：
    react native 加载中Loading  http://www.jianshu.com/p/33bc614e340c
@@ -21,3 +25,5 @@
 
 
 6.React Native探索（二）：布局篇 宽度单位和像素密度    http://www.infoq.com/cn/articles/react-native-layout
+
+

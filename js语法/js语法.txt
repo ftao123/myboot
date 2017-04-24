@@ -1,0 +1,18 @@
+
+
+
+
+
+
+
+1.
+   函数调用中，this 专指全局对象 window，而 在方法中 this 专指当前对象
+
+
+
+
+
+
+函数的调用：
+           JavaScript高级之函数的四种调用形式  http://www.2cto.com/kf/201402/282117.html
+  

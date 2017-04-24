@@ -166,3 +166,43 @@ method: 'GET'
 could not connect to development server   是因为需要设置Dev Settings  --> Debugging 设置成自己的IP  
 React—Native开发之 Could not connect to development server（Android）解决方法   http://blog.csdn.net/qq_25827845/article/details/52974991
 
+
+9. 自己运行网上的开源项目的报错
+ 启动npm报错  http://blog.csdn.net/nigel_lee_beihang/article/details/70060988 
+
+
+10.  react-native-wechat的使用  http://blog.csdn.net/superbiglw/article/details/54571630 把微信引入RN
+
+11. React-Native Primary 第三方库  https://www.zybuluo.com/linux1s1s/note/682634
+
+
+
+
+9.
+  Navigator1=()=>{
+ 
+    alert("被点击了")
+ 
+  }
+
+函数必须是上面的格式  =()=> 这个格式不要忘记，还有就是自己在最后添加了;是这样写的: Navigator1=()=>{
+ alert("被点击了")
+ };然后就是一直报错，说这个不是一个函数。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
