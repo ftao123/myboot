@@ -1,0 +1,18 @@
+
+
+1.官方资料 首发的肯定是kotlin的官方github地址了：https://github.com/JetBrains/kotlin 首发的肯定是kotlin的官方github地址了： 
+  https://github.com/JetBrains/kotlin 晚上看了下trending，稳稳的站在第一。 平时大家没事，可以看看github trending，会有很多的新新优质资源。
+  https://github.com/trending/java Readme中包含官方的tutorials、推荐的图书《Kotlin in Action》、《Kotlin for Android Developers》以及其他资源。
+  英文不太好的不要担心，有官方中文翻译站点： https://www.kotlincn.net/docs/reference/ https://www.gitbook.com/book/h ... tails 
+（2）《Kotlin for android developers》中文版翻译 https://github.com/wangjiegulu ... ME.md 支持在线阅读和下载pdf~ 
+（3）张涛的开源实验室 之前在推送中推荐过张涛的博客，博客质量都很高，在很早的时候就开始编写Kotlin相关博客，此外还有很多比较新的知识~ 
+ https://kymjs.com/column/kotlin.html （4）大精-wing的地方酒馆 让你的代码量减少3倍！使用kotlin开发Android系列~ 
+ http://androidwing.net/index.php/89 还有个Kotlin项目： https://github.com/githubwing/GankClient-Kotlin 
+（5）Kotlin 视频教程 竟然还有视频教程~~ Kotlin从入门到『放弃』系列 视频教程 随着Kotlin越来越成熟稳定，我已经开始在生产环境中使用它。
+ 考虑到目前国内资料较少，我录制了一套视频教程，希望以此抛砖引玉，让 Kotlin 在国内火起来。
+ https://github.com/enbandari/Kotlin-Tutorials 可以百度云下载或者腾讯视频在线观看。 腾讯视频：http://v.qq.com/boke/gplay/903 ... .html 
+ 百度云： http://pan.baidu.com/s/1nvGYAfB （6）开源项目 一个用Kotlin写的简单漫画APP https://github.com/wuapnjie/PoiShuhui-Kotlin 
+ 这个是我从俊林的文章中偷来的，如果有推荐可以留言~ （7）其他文章 为什么我要改用Kotlin http://droidyue.com/blog/2017/ ... tlin/ 
+ by:技术小黑屋 Android开发必备知识：为什么说Kotlin值得一试 https://mp.weixin.qq.com/s%3F_ ... 151b6 by:腾讯Bugly公众号 使用Kotlin进行Android开发 
+ http://ragnraok.github.io/usin ... .html by:Ragnarok Zhou 最后要非常感谢，今天给我投稿的朋友（汇总资料，就直接放出了链接啦）~ 
+ 使用Kotlin在Android Studio上开发App http://blog.csdn.net/qq_258671 ... 75330 by:Blincheng 好文有很多，感谢所有人的分享~ Kotlin社区交流群：302755325  

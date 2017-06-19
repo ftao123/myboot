@@ -1,0 +1,5 @@
+
+
+1.[React Native]react-native-scrollable-tab-view(入门篇)   http://www.jianshu.com/p/b7788c3d106e
+
+2.react-native新导航组件react-navigation详解   http://blog.csdn.net/sinat_17775997/article/details/70176688

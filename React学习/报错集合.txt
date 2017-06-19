@@ -1,0 +1,32 @@
+
+（报错出问题，要找真正是哪里错了，再去百度，不然坑死了）
+
+
+一部分出差是因为配置造成的。
+
+1.React Native 常见问题集合  http://www.cnblogs.com/lovesong/p/5679340.html
+
+2.React-native 踩坑记录  http://www.jianshu.com/p/2df69c50bb55
+
+
+3.在真机上执行react-native run-android出现com.android.ddmlib.InstallException: Failed to finalize session错误  http://blog.csdn.net/xjj19920608/article/details/56290621
+
+  https://stackoverflow.com/questions/35959350/react-native-android-genymotion-adb-server-didnt-ack
+
+
+  adb.exe,start-server' failed -- run manually if necessary  可能是adb端口被占用了，所以重启一下adb就好了。
+  http://www.cnblogs.com/howdop/archive/2016/03/09/5259771.html
+
+  error calling appregistry.runapplication   https://stackoverflow.com/questions/43744156/error-calling-appregistry-runapplication-in-react-native
+
+ 
+4.Unable to resolve module `react/lib/ReactDebugCurrentFrame` from   https://stackoverflow.com/questions/40730787/unable-to-resolve-module-react-lib-reactupdates
+
+
+
+
+
+
+
+
+

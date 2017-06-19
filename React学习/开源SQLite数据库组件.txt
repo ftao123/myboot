@@ -1,0 +1,57 @@
+
+手把手教你在Windows下搭建React Native Android开发环境   http://www.open-open.com/lib/view/open1451012403948.html
+
+ReactNative数据持久化方案  http://www.jianshu.com/p/0010aea78e10
+
+ react-native-AsyncStorage<持久化数据存储>   http://blog.csdn.net/tiem_erhu/article/details/51098923
+
+
+《ReactNative》之sqlite(react-native-sqlite-storage)  http://blog.csdn.net/xukongjing1/article/details/70141157
+
+
+react native 实战系列教程之数据存储 http://blog.csdn.net/it_talk/article/details/53020068   (Demo不错）
+
+
+1. React Native开源SQLite数据库组件(react-native-sqlite-storage)   http://www.lcode.org/react-native-sqlite-storage/
+
+
+
+
+
+
+
+
+
+  
+
+ 
+react-native-sqlite 是 React Native 上的一个 sqlite3 绑定，它可以打开数据库并让 SQL 查询运行其中。目前还只是早期版本， API 还有可能会改变。
+示例代码：
+var sqlite = require('./react-native-sqlite');
+sqlite.open("filename.sqlite", function (error, database) {
+  if (error) {
+    console.log("Failed to open database:", error);
+    return;
+  }
+  var sql = "SELECT a, b FROM table WHERE field=? AND otherfield=?";
+  var params = ["somestring", 99];
+  database.executeSQL(sql, params, rowCallback, completeCallback);
+  function rowCallback(rowData) {
+    console.log("Got row data:", rowData);
+  }
+  function completeCallback(error) {
+    if (error) {
+      console.log("Failed to execute query:", error);
+      return
+    }
+    console.log("Query complete!");
+    database.close(function (error) {
+      if (error) {
+        console.log("Failed to close database:", error);
+        return
+      }
+    });
+  }
+});
+
+

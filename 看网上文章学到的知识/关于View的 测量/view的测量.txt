@@ -1,0 +1,62 @@
+
+
+Android事件分发机制完全解析，带你从源码的角度彻底理解(上) http://blog.csdn.net/guolin_blog/article/details/9097463
+Android视图绘制流程完全解析，带你一步步深入了解View(二)   http://blog.csdn.net/guolin_blog/article/details/16330267
+
+
+安卓中如何获取localstroage里面的值
+android 中 webview 怎么用 localStorage?   http://www.cnblogs.com/yuzhongwusan/p/4211681.html
+Android webView 缓存 Cache + HTML5离线功能 解决  http://www.tuicool.com/articles/uI3AVj
+Android webapp利用localStore websql和IndexDB 来存储数据   http://www.2cto.com/kf/201705/637759.html
+
+getApplicationContext().getDir 
+利用HTML5开发安卓Android应用程序(4)   http://www.docin.com/p-588846448.html
+
+
+topActivity.getPackageName()   Android 如何判断一个应用在运行   http://blog.csdn.net/ydt_lwj/article/details/8984255
+
+AsyncTask和Handler两种异步方式的实现和区别比较  http://www.open-open.com/lib/view/open1413796240122.html
+
+Android异步处理四：AsyncTask的实现原理   http://blog.csdn.net/mylzc/article/details/6774131
+android Asynctask的优缺点？能否同时并发100+asynctask呢？   http://blog.csdn.net/u012974916/article/details/24579213
+
+
+1.自己在看《Android群英传》的时候在 36页标注的：这里自己的理解，在非精确模式下，系统默认wrap_content是充满这个父布局，所以这里才会取最小值。
+  原来是对的，是因为在看到郭霖的博客：Android视图绘制流程完全解析，带你一步步深入了解View(二) http://blog.csdn.net/guolin_blog/article/details/16330267
+  里面有这么一句话证实自己的想法：
+      可以看到，这里使用了MeasureSpec.makeMeasureSpec()方法来组装一个MeasureSpec，当rootDimension参数等于MATCH_PARENT的时候，MeasureSpec的specMode就等
+  于EXACTLY，当rootDimension等于WRAP_CONTENT的时候，MeasureSpec的specMode就等于AT_MOST。并且MATCH_PARENT和WRAP_CONTENT时的specSize都是等于windowSize的，
+  也就意味着根视图总是会充满全屏的。
+
+
+  需要注意的是，在setMeasuredDimension()方法调用之后，我们才能使用getMeasuredWidth()和getMeasuredHeight()来获取视图测量出的宽高，以此之前调用这两个方法得
+  到的值都会是0。
+
+  ViewRoot的performTraversals()方法会在measure结束后继续执行，并调用View的layout()方法来执行此过程
+ 
+
+  View中有一个 public void layout（）方法，这个方法里面有一个 onLayout(changed, l, t, r, b);  方法onLayout是空的需要重写，这个方法决定布局的位置。
+
+
+
+
+
+
+2,.事件分发
+   dispatchTouchEvent中  mOnTouchListener.onTouch(this, event))返回true不会执行 onTouchEvent(event)  也说明mOnTouchListener.onTouch(this, event)是优先 onTouchEvent(event)执行的。
+   mOnTouchListener.onTouch(this, event))返回false 执行onTouchEvent(event)
+
+   onTouchEvent(event)中：
+   当为MotionEvent.ACTION_UP会执行performClick() 方法，然后在performClick() 里面执行mOnClickListener.onClick(this); 
+
+   
+
+
+
+
+
+
+
+
+
+

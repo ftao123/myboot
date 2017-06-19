@@ -1,0 +1,22 @@
+
+1.自己在网上下载一个工程跑步起来是因为没有那个react库，然后npm install 下载了一个node_modules就可以了。
+
+2.React组件属性部类（propTypes）校验  http://www.myexception.cn/web/2016594.html
+
+3.JavaScript Fetch API  http://www.tuicool.com/articles/QZBJ7zJ
+
+
+4. 在终端terminal运行ReactNative程序经常出现的问题 http://blog.csdn.net/margaret_mo/article/details/51542892
+   react-native 环境搭建遇到问题  http://blog.csdn.net/shuai123456/article/details/51910307
+
+5.ReactNative入门（安卓）——API（上） http://www.cnblogs.com/vajoy/p/5204151.html  自定义弹框。
+
+6.统一Android与iOS两个平台的程序入口 http://www.open-open.com/lib/view/open1464179645280.html   （可以区分哪个平台的一个组件）
+
+7.RN的第一个API-----注册组件Appregistry http://www.cnblogs.com/allenxieyusheng/p/5775308.html
+
+8.js中的this关键字详解 http://www.jb51.net/article/41656.htm
+
+9.js bind(this) 问题  https://segmentfault.com/q/1010000004942147 
+  javascript之bind使用介绍   http://www.jb51.net/article/28494.htm 
+  浅谈JavaScript中的apply/call/bind和this的使用 http://www.jb51.net/article/106775.htm
