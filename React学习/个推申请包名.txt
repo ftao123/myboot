@@ -1,0 +1,4 @@
+
+
+看下app模块下的build.gradle 的applicationId
+基本上这个和manifest下的package是一致的，但是有时候也有人会改成不一样，不过在个推平台上填写的为applicationId   

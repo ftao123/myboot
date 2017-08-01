@@ -1,0 +1,22 @@
+
+1.网上已经有很多关于react-navigation属性的介绍了，但是详细说明他们的使用还是很少的，在这里自己研究一下：
+  
+  const App = StackNavigator({
+
+     SecondPage: {screen: SecondPage},
+      FirstPage: {screen: FirstPage},
+ });
+
+ AppRegistry.registerComponent('Dialog', () => App);
+ 
+ 
+  
+  const App = StackNavigator({
+     FirstPage: {screen: FirstPage},
+     SecondPage: {screen: SecondPage},
+ });
+ 这个就是他们说的对页面进行注册。
+ 我去：*****
+  SecondPage: {screen: SecondPage},
+  FirstPage: {screen: FirstPage},    这个顺序还是要注意的，自己把FirstPage放在前面就先加载FirstPage，把 SecondPage放在前面就先加载SecondPage。  
+

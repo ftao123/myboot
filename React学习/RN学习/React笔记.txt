@@ -264,6 +264,23 @@ var { NativeModules } = require('react-native');导入这个变量NativeModules
 15.自己在使用盒模型的时候，css3里面的是flex-direction，但是RN里面全部使用的是驼峰命名，所以应该写成flexDirection这个地方需要注意。
 
 
+16.有时候删除文件说不能删除，把原来文件夹关闭重新打开试一试,如果还不行那就重新运行一下项目再试试。
 
+17.对于一些报错，如果屏幕不能提示有效的信息那么可以执行：http://localhost:8081/index.android.bundle?platform=android&dev=true&hot=false&minify=fals
+   看看给出什么错误信息。
 
+18.import { getFriendList} from '../../../index'  有一个方法getFriendList()在index.ios和index.android里面都有，然后在其他地方引用，因为他们是写的所以引用的时候写的是：
+import { getFriendList} from '../../../index.ios'然后自己为就一直拿不到数据，最后想着用import { getFriendList} from '../../../index'就可以拿到数据了。
 
+19.
+  定意全局变量：
+ 
+ react native 怎么定义全局变量
+ 
+// Global.js
+var Global = {};
+module.exports = Global;
+
+// 调用的页面
+let Global = require('./Global');
+Global.userToken = 'token';
